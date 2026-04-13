@@ -1,0 +1,88 @@
+/*CSS written by Amelia Quintero for quintero-4-build project*/
+
+/*Mobile First*/
+body {
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  font-family: Trebuchet MS, sans-serif;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background-color: hsl(0, 75%, 66%);
+  color: white;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #eb6262;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+section {
+  background-color: white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f34646;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 300px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+}

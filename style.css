@@ -1,65 +1,97 @@
-/*CSS written by Amelia Quintero for quintero-4-build project*/
+/* CSS by Amelia Quintero */
 
-/*Mobile First*/
+/* MOBILE FIRST */
 body {
-  background-color: lightblue;
+  background-color: #B5D9F2;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+  margin: 0;
   font-family: Trebuchet MS, sans-serif;
 }
+
+/* MAIN LAYOUT (fixes zoom issue) */
 main {
   max-width: 900px;
+  width: 100%;
   margin: 0 auto;
+  padding: 1rem;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #eb6262;
+  color: white;
 }
 
 h1 {
   font-family: "Brush Script MT", cursive;
-  font-size: 5rem;
+  font-size: 3rem;
+  margin: 0;
 }
 
 h2 {
   text-align: center;
 }
 
-header {
-  text-align: center;
-  padding: 1rem;
-  background-color: hsl(0, 75%, 66%);
-  color: white;
-}
-
-nav {
-  margin-top: 15px;
-}
-
+/* NAVIGATION */
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
 nav a {
   text-decoration: none;
   background-color: #eb6262;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
+  transition: 0.2s ease;
 }
 
+nav a:hover {
+  background-color: #c94d4d;
+}
+
+/* SECTIONS */
 section {
   background-color: white;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* IMAGES */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* CARDS */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card {
+  background-color: #E8E8E8;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 1rem;
@@ -67,22 +99,10 @@ footer {
   color: white;
 }
 
-.card-container {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1 1 300px;
-}
-
-@media screen and (min-width: 600px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-
+/* MEDIA QUERY */
+@media (min-width: 768px) {
   .card-container {
     flex-direction: row;
+    justify-content: center;
   }
 }

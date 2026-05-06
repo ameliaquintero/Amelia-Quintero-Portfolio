@@ -9,4 +9,3 @@ This is my personal portfolio website created for GIT 215. It includes multiple 
 - Contact (contact.html)
 
 ##Live Site
-https://ameliaquintero.github.io/Amelia-Quintero-Portfolio/
